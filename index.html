@@ -139,6 +139,19 @@
     color: var(--dough); background: rgba(25,24,23,0.7); padding: 6px 12px;
   }
 
+  /* ─── FIRST POSTS ─── */
+  .posts-intro { font-size: 17px; color: var(--muted); line-height: 1.7; max-width: 640px; margin-bottom: 3rem; }
+  .posts-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+  .posts-grid figure { margin: 0; aspect-ratio: 4/5; overflow: hidden; position: relative; }
+  .posts-grid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .posts-grid figure:hover img { transform: scale(1.04); }
+  .posts-grid figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 14px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--dough); background: linear-gradient(to top, rgba(25,24,23,0.85), transparent);
+  }
+  @media (max-width: 900px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
+
   /* ─── VIDEO IDEAS ─── */
   .video-ideas { background: var(--charcoal); }
   .video-ideas .section { border-top: 0.5px solid var(--border); }
@@ -215,6 +228,7 @@
     <li><a href="#gallery">Галерия</a></li>
     <li><a href="#process">Процесът</a></li>
     <li><a href="#videos">Видео идеи</a></li>
+    <li><a href="#posts">Постове</a></li>
     <li><a href="#strategy">Стратегия</a></li>
   </ul>
   <a href="#footer" class="nav-cta">Пиротска 79</a>
@@ -475,6 +489,22 @@
         <p>Някой грабва ястие от ШУПЛА и почва да тича. POV — офис обяд. Комично, реално, urban. Работи перфектно за обедна аудитория от офисите около Пиротска.</p>
       </div>
       <div class="video-link"><a href="https://www.instagram.com/reels/DZXpy7js4Tk/" target="_blank">Референция</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- FIRST POSTS -->
+<div id="posts" style="background:var(--charcoal);">
+  <div class="section">
+    <div class="eyebrow reveal">Feed · Първи постове</div>
+    <h2 class="reveal">Готова<br><span class="orange">стилистика</span></h2>
+    <p class="posts-intro reveal">Пет примерни поста в 4:5 формат — задават визуалния тон за Feed-а: макро текстура на хляба, брандирани графични постове и продуктови снимки с типография.</p>
+    <div class="posts-grid">
+      <figure class="reveal"><img src="post_sutrin_kafe.jpg" alt="Сутрин в ШУПЛА"><figcaption>Сутрин в ШУПЛА</figcaption></figure>
+      <figure class="reveal"><img src="post_kakvo_ima_dnes.jpg" alt="Какво има днес?"><figcaption>Какво има днес?</figcaption></figure>
+      <figure class="reveal"><img src="post_hlyab_mehuri.jpg" alt="Хляб с мехури"><figcaption>Хляб с мехури</figcaption></figure>
+      <figure class="reveal"><img src="post_vsichko_tuk.jpg" alt="Всичко е направено тук"><figcaption>Всичко е тук</figcaption></figure>
+      <figure class="reveal"><img src="post_otvorihme.jpg" alt="Отворихме"><figcaption>Отворихме</figcaption></figure>
     </div>
   </div>
 </div>
