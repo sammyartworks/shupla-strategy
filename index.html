@@ -139,23 +139,10 @@
     color: var(--dough); background: rgba(25,24,23,0.7); padding: 6px 12px;
   }
 
-  /* ─── FIRST POSTS ─── */
-  .posts-intro { font-size: 17px; color: var(--muted); line-height: 1.7; max-width: 640px; margin-bottom: 3rem; }
-  .posts-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
-  .posts-grid figure { margin: 0; aspect-ratio: 4/5; overflow: hidden; position: relative; }
-  .posts-grid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
-  .posts-grid figure:hover img { transform: scale(1.04); }
-  .posts-grid figcaption {
-    position: absolute; left: 0; right: 0; bottom: 0; padding: 14px;
-    font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
-    color: var(--dough); background: linear-gradient(to top, rgba(25,24,23,0.85), transparent);
-  }
-  @media (max-width: 900px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
-
   /* ─── VIDEO IDEAS ─── */
   .video-ideas { background: var(--charcoal); }
   .video-ideas .section { border-top: 0.5px solid var(--border); }
-  .video-item { display: grid; grid-template-columns: 80px 1fr auto; gap: 2rem; align-items: start; padding: 1.5rem 0; border-bottom: 0.5px solid var(--border); transition: background 0.2s; }
+  .video-item { display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start; padding: 1.5rem 0; border-bottom: 0.5px solid var(--border); transition: background 0.2s; }
   .video-item:hover { background: rgba(240,121,36,0.03); margin: 0 -2.5rem; padding: 1.5rem 2.5rem; }
   .video-num { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1; letter-spacing: -2px; color: var(--orange); opacity: 0.3; padding-top: 4px; }
   .video-body h3 { font-size: clamp(1rem, 2vw, 1.5rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; color: var(--dough); margin-bottom: 4px; line-height: 1.1; }
@@ -167,7 +154,7 @@
   .video-link a::after { content: '↗'; font-size: 14px; }
 
   /* ─── STRATEGY PILLARS ─── */
-  .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 4rem; }
+  .pillars-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 4rem; }
   .pillar { padding: 2.5rem; border: 0.5px solid var(--border); position: relative; overflow: hidden; }
   .pillar::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--orange); transition: height 0.4s ease; }
   .pillar:hover::before { height: 100%; }
@@ -228,7 +215,6 @@
     <li><a href="#gallery">Галерия</a></li>
     <li><a href="#process">Процесът</a></li>
     <li><a href="#videos">Видео идеи</a></li>
-    <li><a href="#posts">Постове</a></li>
     <li><a href="#strategy">Стратегия</a></li>
   </ul>
   <a href="#footer" class="nav-cta">Пиротска 79</a>
@@ -244,7 +230,7 @@
     <div class="hero-bottom">
       <p class="hero-desc">Всичко се замесва, пече и сервира тук. Хляб с мехури, фокачи, обедно меню — направено на място, всеки ден.</p>
       <div class="hero-meta">
-        <p>Отваряме 10 Юли 2026</p>
+        <p>Отваряме Скоро</p>
         <p>Пон–Пет · 07:30 – 17:00</p>
         <p>@shupla.bg</p>
       </div>
@@ -260,13 +246,13 @@
     <span>Изпечено тук</span><span class="dot">·</span>
     <span>Направено тук</span><span class="dot">·</span>
     <span>Хляб с мехури</span><span class="dot">·</span>
-    <span>Отваряме 10 Юли</span><span class="dot">·</span>
+    <span>Отваряме Скоро</span><span class="dot">·</span>
     <span>Пиротска 79</span><span class="dot">·</span>
     <span>Замесено тук</span><span class="dot">·</span>
     <span>Изпечено тук</span><span class="dot">·</span>
     <span>Направено тук</span><span class="dot">·</span>
     <span>Хляб с мехури</span><span class="dot">·</span>
-    <span>Отваряме 10 Юли</span><span class="dot">·</span>
+    <span>Отваряме Скоро</span><span class="dot">·</span>
     <span>Пиротска 79</span><span class="dot">·</span>
   </div>
 </div>
@@ -304,7 +290,7 @@
 <div id="gallery" class="section-full" style="background:var(--charcoal); padding-top:4px;">
   <div class="photo-grid">
     <div class="ph tall">
-      <img src="img_loaf_board.webp" alt="Екипът">
+      <img src="img_baker_rack.webp" alt="Екипът">
       <div class="ph-label">Екипът</div>
     </div>
     <div class="ph">
@@ -312,11 +298,11 @@
       <div class="ph-label">Хляб с мехури</div>
     </div>
     <div class="ph">
-      <img src="img_crust_macro.webp" alt="Текстура">
+      <img src="img_toast_closeup.webp" alt="Текстура">
       <div class="ph-label">Текстурата</div>
     </div>
     <div class="ph">
-      <img src="img_oven_1.jpg" alt="Фурната">
+      <img src="img_bread_seeds.jpg" alt="Фурната">
       <div class="ph-label">Фурната</div>
     </div>
     <div class="ph">
@@ -329,7 +315,7 @@
 <!-- FULLSCREEN BANNER -->
 <div class="fs-banner">
   <div class="fs-banner-img">
-    <img src="img_slices_dark_1.jpg" alt="Нашият хляб">
+    <img src="img_bread_mw.webp" alt="Нашият хляб">
   </div>
   <div class="fs-banner-overlay"></div>
   <div class="fs-banner-content reveal">
@@ -349,9 +335,9 @@
     <div class="process-track">
       <div class="process-item"><img src="img_dough_stretch.jpg" alt="Тестото"><div class="process-item-label">01 · Тестото</div></div>
       <div class="process-item"><img src="img_dough_fold.webp" alt="Оформяне"><div class="process-item-label">02 · Оформяне</div></div>
-      <div class="process-item"><img src="img_hands_bread.jpg" alt="Пекарят"><div class="process-item-label">03 · Пекарят</div></div>
+      <div class="process-item"><img src="img_baker_shaping.jpg" alt="Пекарят"><div class="process-item-label">03 · Пекарят</div></div>
       <div class="process-item"><img src="img_flour_sieve.webp" alt="Брашното"><div class="process-item-label">04 · Брашното</div></div>
-      <div class="process-item"><img src="img_oven_1.jpg" alt="Фурната"><div class="process-item-label">05 · Фурната</div></div>
+      <div class="process-item"><img src="img_bread_oven2.jpg" alt="Фурната"><div class="process-item-label">05 · Фурната</div></div>
       <div class="process-item"><img src="img_oven.jpg" alt="Печенето"><div class="process-item-label">06 · Печенето</div></div>
       <div class="process-item"><img src="img_bubbles_macro.webp" alt="Мехурите"><div class="process-item-label">07 · Мехурите</div></div>
       <div class="process-item"><img src="img_croissant_cross.jpg" alt="Текстурата"><div class="process-item-label">08 · Текстурата</div></div>
@@ -378,7 +364,6 @@
         <h3>Знаете ли, че...</h3>
         <p>„Знаете ли, че в София вече може да опитате хляб с мехури?" — нови аудитории, работи като organic discovery. Перфектен за TikTok For You Page.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DZLjtJKRjB9/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -388,7 +373,6 @@
         <h3>Изгледайте докрай</h3>
         <p>„Истинска италианска фокача в София — изгледайте видеото докрай!" — задържане на вниманието, call to watch. Работи за алгоритъма.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DZj-VT8MfX_/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -398,7 +382,6 @@
         <h3>Гледайте как се пече</h3>
         <p>„Пекарна, в която може да гледате как хлябът ви се пече? Да — възможно е!" — уникалното на ШУПЛА показано директно. Откритата кухня като главна звезда.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DZcD3iHOFzE/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -408,7 +391,6 @@
         <h3>Цяла кутия фокачи</h3>
         <p>„Цяла кутия с фокачи само за X евро" — стойност и достъпност. Работи и като платена реклама. Показва продукта и цената директно.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DY9MY3osxzP/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -418,7 +400,6 @@
         <h3>Топли печива весь ден</h3>
         <p>„В София отвори място, в което може да вземете топли печива през целия ден." — достъпност и изграждане на навик за ежедневно посещение.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DY0DNFzvqVd/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -428,7 +409,6 @@
         <h3>ШУПЛА те връща в детството</h3>
         <p>Баба влиза в ШУПЛА, хапва хляба и се превръща в малко момиче. „ШУПЛА те връща в детството." — силен емоционален hook с голям viral потенциал.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DUGr-Mrj_09/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -438,7 +418,6 @@
         <h3>Статичен кадър на фасадата</h3>
         <p>Светът около фасадата минава размазано и бързо. Накрая голям надпис: ШУПЛА. Cinematic тийзър за отварянето. Работи с бавна музика.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DZVjFjUOp4c/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -448,7 +427,6 @@
         <h3>Удряш шампанско — ОТВОРИХМЕ</div>
         <p>Удряш шампанско, гърми — „ОТВОРИХМЕ." Моментален hook за деня на отварянето 10 Юли. Висок engagement гарантиран.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DTFs573CPLx/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -458,7 +436,6 @@
         <h3>Разказ за хляба</h3>
         <p>Как се прави хлябът стъпка по стъпка + силна цветова корекция. Process video с образователен елемент — builds credibility и brand trust.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DYMVHPzo-3F/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -468,7 +445,6 @@
         <h3>Огледалото с QR код</h3>
         <p>Брандирано огледало пред пекарната с послание и QR код. Хората се снимат пред него и качват сами. UGC без усилие — community building от ден 1.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DW6g_PbEg1x/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -478,7 +454,6 @@
         <h3>Режеш хартия — дата</h3>
         <p>Нож реже хартия бавно, през разреза се появява датата на отварянето. Драматичен, запомнящ се reveal. Перфектен за тийзър кампанията.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reel/DZMLqthN03z/" target="_blank">Референция</a></div>
     </div>
 
     <div class="video-item reveal">
@@ -488,80 +463,142 @@
         <h3>Грабва и тича с обяда</h3>
         <p>Някой грабва ястие от ШУПЛА и почва да тича. POV — офис обяд. Комично, реално, urban. Работи перфектно за обедна аудитория от офисите около Пиротска.</p>
       </div>
-      <div class="video-link"><a href="https://www.instagram.com/reels/DZXpy7js4Tk/" target="_blank">Референция</a></div>
     </div>
   </div>
 </div>
 
-<!-- FIRST POSTS -->
-<div id="posts" style="background:var(--charcoal);">
+
+<!-- MIGRATION -->
+<div id="migration" style="background:var(--charcoal);">
   <div class="section">
-    <div class="eyebrow reveal">Feed · Първи постове</div>
-    <h2 class="reveal">Готова<br><span class="orange">стилистика</span></h2>
-    <p class="posts-intro reveal">Пет примерни поста в 4:5 формат — задават визуалния тон за Feed-а: макро текстура на хляба, брандирани графични постове и продуктови снимки с типография.</p>
-    <div class="posts-grid">
-      <figure class="reveal"><img src="01_4-5.png" alt="Сутрин в ШУПЛА"><figcaption>Сутрин в ШУПЛА</figcaption></figure>
-      <figure class="reveal"><img src="02_4-5.png" alt="Какво има днес?"><figcaption>Какво има днес?</figcaption></figure>
-      <figure class="reveal"><img src="03_4-5.png" alt="Хляб с мехури"><figcaption>Хляб с мехури</figcaption></figure>
-      <figure class="reveal"><img src="image%20(1).png" alt="Всичко е направено тук"><figcaption>Всичко е тук</figcaption></figure>
-      <figure class="reveal"><img src="image.png" alt="Отворихме"><figcaption>Отворихме</figcaption></figure>
-    </div>
-  </div>
-</div>
-
-<!-- BIG QUOTE -->
-<div class="big-quote">
-  <blockquote>„ШУПЛА е мястото за <span>закуска,</span> печива и <span>обяд</span> в центъра."</blockquote>
-  <cite>Стратегия 2026 · MOSHE AGENCY</cite>
-</div>
-
-<!-- STRATEGY -->
-<div id="strategy" style="background:var(--charcoal);">
-  <div class="section">
-    <div class="eyebrow reveal">Стратегия 2026</div>
-    <h2 class="reveal">Лятна<br><span class="orange">кампания</span></h2>
-
-    <div class="phases-grid" style="margin-bottom:5rem;">
-      <div class="phase reveal">
-        <div class="phase-tag">Фаза 01</div>
-        <div class="phase-date">7 Юни → 10 Август</div>
-        <h3>Лятото</h3>
-        <p>Официално откриване 10 Юли. Закуска, кафе (Ноа), обядно меню. TikTok native съдържание. UGC от старта.</p>
-        <div class="phase-chips"><span class="chip">Закуска</span><span class="chip">Обяд</span><span class="chip">TikTok</span><span class="chip">UGC</span></div>
-      </div>
-      <div class="phase reveal">
-        <div class="phase-tag">Фаза 02</div>
-        <div class="phase-date">10 Авг → Септември</div>
-        <h3>Паузата</h3>
-        <p>2 седмици затваряне. BTS съдържание. Teaser кампания за есенното голямо отваряне. Countdown.</p>
-        <div class="phase-chips"><span class="chip">BTS</span><span class="chip">Тийзър</span><span class="chip">Countdown</span></div>
-      </div>
-      <div class="phase reveal">
-        <div class="phase-tag">Фаза 03</div>
-        <div class="phase-date">15–16 Септември</div>
-        <h3>Голямото</h3>
-        <p>Голямото отваряне. Вечери с резервация след 19:00. Вино. B2B кетъринг. Коледни събития.</p>
-        <div class="phase-chips"><span class="chip">Вечери</span><span class="chip">Вино</span><span class="chip">B2B</span></div>
-      </div>
-    </div>
+    <div class="eyebrow reveal">Преход · Фокачария → ШУПЛА</div>
+    <h2 class="reveal">Миграцията<br>е <span class="orange">директна</span></h2>
+    <p style="font-size:17px; color:var(--muted); line-height:1.8; max-width:640px; margin-bottom:3rem;" class="reveal">Не изтриваме историята — разказваме еволюцията. Качваме снимка на фокача и как фокачата става ШУПЛА и на новото място. Три поста, един разказ.</p>
 
     <div class="pillars-grid">
       <div class="pillar reveal">
-        <div class="pillar-num">40%</div>
-        <h3>Хляб</h3>
-        <p>Тесто, мехури, фурна, процес. Hero продуктът е хлябът — показваме го честно и близо.</p>
-      </div>
-      <div class="pillar reveal">
-        <div class="pillar-num">30%</div>
+        <div class="pillar-num">50%</div>
         <h3>Хора</h3>
-        <p>Пекари, гости, екип. Хората купуват от хора. Лицата на ШУПЛА са важни колкото продукта.</p>
+        <p>Пекари, гости, екипът зад ШУПЛА. Хората разказват историята на мястото — те са причината да се върнеш.</p>
       </div>
       <div class="pillar reveal">
-        <div class="pillar-num">20%</div>
-        <h3>Обяд</h3>
-        <p>Меню, витрина, daily съдържание. Всеки ден нещо ново. Свежо и постоянно.</p>
+        <div class="pillar-num">50%</div>
+        <h3>Хляб</h3>
+        <p>Фокачи, квасен хляб, мехури, кора, процес. Показваме силната страна на ШУПЛА — занаятът, който ги отличава.</p>
       </div>
+
     </div>
+  </div>
+</div>
+
+
+<!-- EXTRA VIDEO IDEAS -->
+<div id="extra-videos" style="background:#111010; border-top: 0.5px solid rgba(231,229,225,0.06);">
+  <div class="section">
+    <div class="eyebrow reveal">Допълнителни идеи · От екипа</div>
+    <h2 class="reveal">Още<br><span class="orange">концепции</span></h2>
+    <p style="font-size:17px; color:var(--muted); margin-bottom:3rem; line-height:1.7;" class="reveal">Допълнителни видео концепции — различни от основните 12. Кликни на линка за референция.</p>
+
+    <div class="video-item reveal">
+      <div class="video-num">А</div>
+      <div class="video-body">
+        <div class="video-type">Визуална концепция</div>
+        <h3>Негатив визия — хлябът оживява</h3>
+        <p>Негатив дизайн на хляб и отдолу се появяват различни моменти от ШУПЛА. Силен визуален hook.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DZPIKYxISgi/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Б</div>
+      <div class="video-body">
+        <div class="video-type">Тийзър · Opening</div>
+        <h3>Екипът затъмнен — говорят за ШУПЛА</h3>
+        <p>Снимаме екипа затъмнени, говорят за ШУПЛА. Мини тийзър за отварянето — мистерия + идентификация.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DYnooyXoAdT/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">В</div>
+      <div class="video-body">
+        <div class="video-type">Cinematic · Place story</div>
+        <h3>Разказваме за мястото</h3>
+        <p>Cinematic кадри на пространството и откритата кухня. Усещане за premium без претенции.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DZj-VT8MfX_/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Г</div>
+      <div class="video-body">
+        <div class="video-type">Immersive · Experience</div>
+        <h3>Преживей ШУПЛА</h3>
+        <p>POV влизане в пекарната — мирис на хляб, топло кафе, откритата кухня. Пренасяш се вътре.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DZLjtJKRjB9/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Д</div>
+      <div class="video-body">
+        <div class="video-type">Музика за ШУПЛА</div>
+        <h3>Саундтракът на пекарната</h3>
+        <p>Музикален референс за тона на видеата. Топло, градско, автентично.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DZT4scNu_RL/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Е</div>
+      <div class="video-body">
+        <div class="video-type">UGC · Огледало v2</div>
+        <h3>Брандирано огледало на улицата</h3>
+        <p>Огледало с послание на улицата — хората се снимат и качват сами. Различен ъгъл от основната идея.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DWv72NPjW-m/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Ж</div>
+      <div class="video-body">
+        <div class="video-type">Product · Process + цветова корекция</div>
+        <h3>Разказ за продукта</h3>
+        <p>Как се прави продуктът + силна цветова корекция. Различен стил от основния process video.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DZCPGqlsOhC/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">З</div>
+      <div class="video-body">
+        <div class="video-type">POV · Фокача</div>
+        <h3>Всеки опитва от фокачите</h3>
+        <p>POV — ръка взима фокача, отхапва, реакция. Социално доказателство в action.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reels/DWUoZXaDvTT/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">И</div>
+      <div class="video-body">
+        <div class="video-type">Обяд · Daily атмосфера</div>
+        <h3>Общо видео за обяда</h3>
+        <p>Задружно хапване, моменти от заведението, гости. Атмосферата на обедното.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reels/DZmV0UmgV0h/" target="_blank">Виж идеята</a></div>
+    </div>
+
+    <div class="video-item reveal">
+      <div class="video-num">Й</div>
+      <div class="video-body">
+        <div class="video-type">Рожден ден · Anniversary</div>
+        <h3>Една година ШУПЛА</h3>
+        <p>Формат за годишнина — как се развива ШУПЛА, какво се е случило за годината.</p>
+      </div>
+      <div class="video-link"><a href="https://www.instagram.com/reel/DUGr-Mrj_09/" target="_blank">Виж идеята</a></div>
+    </div>
+
   </div>
 </div>
 
